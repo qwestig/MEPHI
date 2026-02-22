@@ -4,6 +4,23 @@
 run_backtracking_debug :-
     writeln('=== Проверка backtracking и полноты ответов ==='),
 
+    writeln('\n0) Примеры базовых/производных отношений (мать/отец/дедушка):'),
+    (   мать(M0, ivan),
+        format('  мать(X, ivan): X = ~w~n', [M0]),
+        fail
+    ;   true
+    ),
+    (   отец(F0, ivan),
+        format('  отец(X, ivan): X = ~w~n', [F0]),
+        fail
+    ;   true
+    ),
+    (   дедушка(G0, nikita),
+        format('  дедушка(X, nikita): X = ~w~n', [G0]),
+        fail
+    ;   true
+    ),
+
     writeln('\n1) Все потомки fedor (рекурсия предок/2):'),
     (   предок(fedor, X1),
         format('  X = ~w~n', [X1]),
