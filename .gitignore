@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# SWI-Prolog artifacts (если появятся)
+*.qlf
+*.ql
+
+# temp
+*.tmp
