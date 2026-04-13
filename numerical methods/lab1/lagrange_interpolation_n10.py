@@ -4,21 +4,16 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-
 def f(x: np.ndarray) -> np.ndarray:
     return np.exp(x / 3.0) / (1.0 + x**2)
 
-
 def uniform_nodes(a: float, b: float, n_nodes: int) -> np.ndarray:
     return np.linspace(a, b, n_nodes)
-
 
 def chebyshev_nodes(a: float, b: float, n_nodes: int) -> np.ndarray:
     k = np.arange(n_nodes)
     x_std = np.cos((2 * k + 1) * np.pi / (2 * n_nodes))
     return (a + b) / 2.0 + (b - a) * x_std / 2.0
-
-
 def barycentric_weights(nodes: np.ndarray) -> np.ndarray:
     n = len(nodes)
     w = np.ones(n)
@@ -26,8 +21,6 @@ def barycentric_weights(nodes: np.ndarray) -> np.ndarray:
         diff = nodes[j] - np.delete(nodes, j)
         w[j] = 1.0 / np.prod(diff)
     return w
-
-
 def barycentric_interpolate(
     x_eval: np.ndarray,
     nodes: np.ndarray,
@@ -40,7 +33,12 @@ def barycentric_interpolate(
     for i, x in enumerate(x_eval):
         d = x - nodes
         close = np.where(np.abs(d) < eps)[0]
-        if close.size > 0:
+        if close.size > 1:
+            raise ValueError(
+                f"Ambiguous: x={x} is within eps={eps} of multiple nodes. "
+                f"indices={close.tolist()}, nodes={nodes[close].tolist()}"
+            )
+        if close.size == 1:
             result[i] = values[close[0]]
             continue
 
@@ -49,11 +47,9 @@ def barycentric_interpolate(
 
     return result
 
-
 def midpoint_points(nodes: np.ndarray) -> np.ndarray:
     sorted_nodes = np.sort(nodes)
     return 0.5 * (sorted_nodes[:-1] + sorted_nodes[1:])
-
 
 def print_report(name: str, x_star: np.ndarray, fx: np.ndarray, px: np.ndarray) -> None:
     err = np.abs(fx - px)
@@ -64,7 +60,6 @@ def print_report(name: str, x_star: np.ndarray, fx: np.ndarray, px: np.ndarray) 
         print(f"{x:10.6f} {fv:16.10e} {pv:16.10e} {e:16.10e}")
     print(f"max error:  {np.max(err):.10e}")
     print(f"mean error: {np.mean(err):.10e}")
-
 
 def save_plots(
     a: float,
@@ -138,7 +133,6 @@ def save_plots(
     fig.savefig("interpolation_n10.png", dpi=200)
     plt.close(fig)
 
-
 def main() -> None:
     a, b = 0.0, 10.0
     n_nodes = 10
@@ -176,7 +170,6 @@ def main() -> None:
         weights_cheb,
     )
     print("Saved plot: interpolation_n10.png")
-
 
 if __name__ == "__main__":
     main()
