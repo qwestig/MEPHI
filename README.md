@@ -5,3 +5,4 @@
 - [Numerical methods](numerical%20methods/)
 - [Functional programming](Func_prog)
 - [ML Practicum](ML%20Practicum/)
+- [Evolutionary programming](Evolutionary%20programming/)

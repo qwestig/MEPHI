@@ -1,0 +1,26 @@
+{
+  "dimension": 6,
+  "lower_bound": -100.0,
+  "upper_bound": 100.0,
+  "runs": 20,
+  "base_seed": 20260916,
+  "evaluation_budget": 3000,
+  "tournament_size": 3,
+  "elitism": 1,
+  "configurations": [
+    {
+      "name": "wide_mutation",
+      "population_size": 60,
+      "crossover_probability": 0.9,
+      "mutation_probability": 0.2,
+      "mutation_sigma": 10.0
+    },
+    {
+      "name": "fine_mutation",
+      "population_size": 60,
+      "crossover_probability": 0.9,
+      "mutation_probability": 0.2,
+      "mutation_sigma": 2.0
+    }
+  ]
+}
