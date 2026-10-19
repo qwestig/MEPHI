@@ -1,0 +1,19 @@
+{
+  "variant": 13,
+  "instance": "data/waste_collection.json",
+  "runs": 20,
+  "base_seed": 20261019,
+  "evaluation_budget": 10000,
+  "population_size": 80,
+  "tournament_size": 3,
+  "elitism": 2,
+  "crossover_probability": 0.9,
+  "mutation_probability": 0.3,
+  "penalty_coefficient": 10000.0,
+  "configurations": [
+    {"name": "penalty_swap", "constraints": "penalty", "mutation": "swap"},
+    {"name": "penalty_inversion", "constraints": "penalty", "mutation": "inversion"},
+    {"name": "repair_swap", "constraints": "repair", "mutation": "swap"},
+    {"name": "repair_inversion", "constraints": "repair", "mutation": "inversion"}
+  ]
+}
