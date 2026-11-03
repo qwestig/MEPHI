@@ -1,0 +1,386 @@
+{
+  "method": "directed_ga",
+  "run": 26,
+  "seed": 20261128,
+  "covered": [
+    "admission.1:F",
+    "admission.1:T",
+    "admission.2:F",
+    "admission.2:T",
+    "admission.3:F",
+    "admission.3:T",
+    "admission.4:F",
+    "admission.4:T",
+    "admission.5:F",
+    "admission.5:T",
+    "admission.6:F",
+    "admission.6:T",
+    "admission.7:F",
+    "admission.7:T",
+    "admission.8:F",
+    "admission.8:T",
+    "order.1:F",
+    "order.1:T",
+    "order.2:F",
+    "order.2:T",
+    "order.3:F",
+    "order.3:T",
+    "order.4:F",
+    "order.4:T",
+    "order.5:F",
+    "order.5:T",
+    "order.6:F",
+    "order.6:T",
+    "order.7:F",
+    "order.7:T",
+    "shipping.1:F",
+    "shipping.1:T",
+    "shipping.2:F",
+    "shipping.2:T",
+    "shipping.3:F",
+    "shipping.3:T",
+    "shipping.4:F",
+    "shipping.4:T",
+    "shipping.5:F",
+    "shipping.5:T",
+    "shipping.6:F",
+    "shipping.6:T",
+    "shipping.7:F",
+    "shipping.7:T"
+  ],
+  "missing": [],
+  "suite": [
+    {
+      "genome": [
+        2,
+        40,
+        37,
+        -11
+      ],
+      "covers": [
+        "admission.1:F",
+        "admission.4:F",
+        "admission.6:T",
+        "admission.7:T",
+        "admission.8:T"
+      ]
+    },
+    {
+      "genome": [
+        0,
+        37,
+        48,
+        36
+      ],
+      "covers": [
+        "order.1:F",
+        "order.3:T",
+        "order.4:T",
+        "order.5:F"
+      ]
+    },
+    {
+      "genome": [
+        1,
+        -61,
+        23,
+        7
+      ],
+      "covers": [
+        "shipping.1:F",
+        "shipping.4:T",
+        "shipping.5:T",
+        "shipping.6:T"
+      ]
+    },
+    {
+      "genome": [
+        0,
+        64,
+        26,
+        -52
+      ],
+      "covers": [
+        "order.1:F",
+        "order.3:F",
+        "order.6:T",
+        "order.7:T"
+      ]
+    },
+    {
+      "genome": [
+        1,
+        63,
+        -44,
+        82
+      ],
+      "covers": [
+        "shipping.1:T",
+        "shipping.2:T",
+        "shipping.3:T"
+      ]
+    },
+    {
+      "genome": [
+        2,
+        -8,
+        11,
+        3
+      ],
+      "covers": [
+        "admission.1:T",
+        "admission.2:T",
+        "admission.3:T"
+      ]
+    },
+    {
+      "genome": [
+        0,
+        -97,
+        63,
+        0
+      ],
+      "covers": [
+        "order.1:T",
+        "order.2:F"
+      ]
+    },
+    {
+      "genome": [
+        1,
+        -71,
+        87,
+        99
+      ],
+      "covers": [
+        "shipping.1:F",
+        "shipping.4:F",
+        "shipping.7:F"
+      ]
+    },
+    {
+      "genome": [
+        2,
+        -89,
+        35,
+        -69
+      ],
+      "covers": [
+        "admission.1:F",
+        "admission.4:T",
+        "admission.5:F"
+      ]
+    },
+    {
+      "genome": [
+        0,
+        -35,
+        -17,
+        29
+      ],
+      "covers": [
+        "order.1:T",
+        "order.2:T"
+      ]
+    },
+    {
+      "genome": [
+        0,
+        37,
+        -70,
+        -61
+      ],
+      "covers": [
+        "order.1:F",
+        "order.3:T",
+        "order.4:F"
+      ]
+    },
+    {
+      "genome": [
+        0,
+        37,
+        48,
+        41
+      ],
+      "covers": [
+        "order.1:F",
+        "order.3:T",
+        "order.4:T",
+        "order.5:T"
+      ]
+    },
+    {
+      "genome": [
+        0,
+        67,
+        5,
+        7
+      ],
+      "covers": [
+        "order.1:F",
+        "order.3:F",
+        "order.6:F"
+      ]
+    },
+    {
+      "genome": [
+        0,
+        76,
+        100,
+        10
+      ],
+      "covers": [
+        "order.1:F",
+        "order.3:F",
+        "order.6:T",
+        "order.7:F"
+      ]
+    },
+    {
+      "genome": [
+        1,
+        -61,
+        23,
+        17
+      ],
+      "covers": [
+        "shipping.1:F",
+        "shipping.4:T",
+        "shipping.5:T",
+        "shipping.6:F"
+      ]
+    },
+    {
+      "genome": [
+        1,
+        -61,
+        49,
+        78
+      ],
+      "covers": [
+        "shipping.1:F",
+        "shipping.4:T",
+        "shipping.5:F"
+      ]
+    },
+    {
+      "genome": [
+        1,
+        57,
+        -14,
+        -58
+      ],
+      "covers": [
+        "shipping.1:F",
+        "shipping.4:F",
+        "shipping.7:T"
+      ]
+    },
+    {
+      "genome": [
+        1,
+        83,
+        -61,
+        83
+      ],
+      "covers": [
+        "shipping.1:T",
+        "shipping.2:T",
+        "shipping.3:F"
+      ]
+    },
+    {
+      "genome": [
+        1,
+        97,
+        59,
+        53
+      ],
+      "covers": [
+        "shipping.1:T",
+        "shipping.2:F"
+      ]
+    },
+    {
+      "genome": [
+        2,
+        -72,
+        0,
+        0
+      ],
+      "covers": [
+        "admission.1:F",
+        "admission.4:T",
+        "admission.5:T"
+      ]
+    },
+    {
+      "genome": [
+        2,
+        -43,
+        40,
+        29
+      ],
+      "covers": [
+        "admission.1:F",
+        "admission.4:F",
+        "admission.6:F"
+      ]
+    },
+    {
+      "genome": [
+        2,
+        -8,
+        11,
+        8
+      ],
+      "covers": [
+        "admission.1:T",
+        "admission.2:T",
+        "admission.3:F"
+      ]
+    },
+    {
+      "genome": [
+        2,
+        -6,
+        -18,
+        -58
+      ],
+      "covers": [
+        "admission.1:T",
+        "admission.2:F"
+      ]
+    },
+    {
+      "genome": [
+        2,
+        40,
+        -18,
+        -17
+      ],
+      "covers": [
+        "admission.1:F",
+        "admission.4:F",
+        "admission.6:T",
+        "admission.7:F"
+      ]
+    },
+    {
+      "genome": [
+        2,
+        40,
+        37,
+        34
+      ],
+      "covers": [
+        "admission.1:F",
+        "admission.4:F",
+        "admission.6:T",
+        "admission.7:T",
+        "admission.8:F"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,506 @@
+{
+  "metadata": {
+    "order.1": {
+      "function": "order",
+      "condition": "x < 0",
+      "parents": [],
+      "line": 5
+    },
+    "order.2": {
+      "function": "order",
+      "condition": "y == -17",
+      "parents": [
+        "order.1:T"
+      ],
+      "line": 6
+    },
+    "order.3": {
+      "function": "order",
+      "condition": "x == 37",
+      "parents": [
+        "order.1:F"
+      ],
+      "line": 9
+    },
+    "order.4": {
+      "function": "order",
+      "condition": "y == x + 11",
+      "parents": [
+        "order.1:F",
+        "order.3:T"
+      ],
+      "line": 10
+    },
+    "order.5": {
+      "function": "order",
+      "condition": "z == y - 7",
+      "parents": [
+        "order.1:F",
+        "order.3:T",
+        "order.4:T"
+      ],
+      "line": 11
+    },
+    "order.6": {
+      "function": "order",
+      "condition": "x + y > 80",
+      "parents": [
+        "order.1:F",
+        "order.3:F"
+      ],
+      "line": 15
+    },
+    "order.7": {
+      "function": "order",
+      "condition": "z < 0",
+      "parents": [
+        "order.1:F",
+        "order.3:F",
+        "order.6:T"
+      ],
+      "line": 16
+    },
+    "shipping.1": {
+      "function": "shipping",
+      "condition": "x > 60",
+      "parents": [],
+      "line": 23
+    },
+    "shipping.2": {
+      "function": "shipping",
+      "condition": "y < -40",
+      "parents": [
+        "shipping.1:T"
+      ],
+      "line": 24
+    },
+    "shipping.3": {
+      "function": "shipping",
+      "condition": "z == 2 * x + y",
+      "parents": [
+        "shipping.1:T",
+        "shipping.2:T"
+      ],
+      "line": 25
+    },
+    "shipping.4": {
+      "function": "shipping",
+      "condition": "x == -61",
+      "parents": [
+        "shipping.1:F"
+      ],
+      "line": 29
+    },
+    "shipping.5": {
+      "function": "shipping",
+      "condition": "y == 23",
+      "parents": [
+        "shipping.1:F",
+        "shipping.4:T"
+      ],
+      "line": 30
+    },
+    "shipping.6": {
+      "function": "shipping",
+      "condition": "z == 7",
+      "parents": [
+        "shipping.1:F",
+        "shipping.4:T",
+        "shipping.5:T"
+      ],
+      "line": 31
+    },
+    "shipping.7": {
+      "function": "shipping",
+      "condition": "y - z > 40",
+      "parents": [
+        "shipping.1:F",
+        "shipping.4:F"
+      ],
+      "line": 35
+    },
+    "admission.1": {
+      "function": "admission",
+      "condition": "x * x < 100",
+      "parents": [],
+      "line": 41
+    },
+    "admission.2": {
+      "function": "admission",
+      "condition": "y == 11",
+      "parents": [
+        "admission.1:T"
+      ],
+      "line": 42
+    },
+    "admission.3": {
+      "function": "admission",
+      "condition": "z == x + y",
+      "parents": [
+        "admission.1:T",
+        "admission.2:T"
+      ],
+      "line": 43
+    },
+    "admission.4": {
+      "function": "admission",
+      "condition": "x < -60",
+      "parents": [
+        "admission.1:F"
+      ],
+      "line": 47
+    },
+    "admission.5": {
+      "function": "admission",
+      "condition": "y + z == 0",
+      "parents": [
+        "admission.1:F",
+        "admission.4:T"
+      ],
+      "line": 48
+    },
+    "admission.6": {
+      "function": "admission",
+      "condition": "x == 40",
+      "parents": [
+        "admission.1:F",
+        "admission.4:F"
+      ],
+      "line": 51
+    },
+    "admission.7": {
+      "function": "admission",
+      "condition": "y == 37",
+      "parents": [
+        "admission.1:F",
+        "admission.4:F",
+        "admission.6:T"
+      ],
+      "line": 52
+    },
+    "admission.8": {
+      "function": "admission",
+      "condition": "z == -11",
+      "parents": [
+        "admission.1:F",
+        "admission.4:F",
+        "admission.6:T",
+        "admission.7:T"
+      ],
+      "line": 53
+    }
+  },
+  "goals": [
+    "order.1:T",
+    "order.1:F",
+    "order.2:T",
+    "order.2:F",
+    "order.3:T",
+    "order.3:F",
+    "order.4:T",
+    "order.4:F",
+    "order.5:T",
+    "order.5:F",
+    "order.6:T",
+    "order.6:F",
+    "order.7:T",
+    "order.7:F",
+    "shipping.1:T",
+    "shipping.1:F",
+    "shipping.2:T",
+    "shipping.2:F",
+    "shipping.3:T",
+    "shipping.3:F",
+    "shipping.4:T",
+    "shipping.4:F",
+    "shipping.5:T",
+    "shipping.5:F",
+    "shipping.6:T",
+    "shipping.6:F",
+    "shipping.7:T",
+    "shipping.7:F",
+    "admission.1:T",
+    "admission.1:F",
+    "admission.2:T",
+    "admission.2:F",
+    "admission.3:T",
+    "admission.3:F",
+    "admission.4:T",
+    "admission.4:F",
+    "admission.5:T",
+    "admission.5:F",
+    "admission.6:T",
+    "admission.6:F",
+    "admission.7:T",
+    "admission.7:F",
+    "admission.8:T",
+    "admission.8:F"
+  ],
+  "witnesses": {
+    "order.1:T": [
+      0,
+      -100,
+      -100,
+      -100
+    ],
+    "order.2:F": [
+      0,
+      -100,
+      -100,
+      -100
+    ],
+    "order.2:T": [
+      0,
+      -100,
+      -17,
+      -100
+    ],
+    "order.1:F": [
+      0,
+      0,
+      -100,
+      -100
+    ],
+    "order.3:F": [
+      0,
+      0,
+      -100,
+      -100
+    ],
+    "order.6:F": [
+      0,
+      0,
+      -100,
+      -100
+    ],
+    "order.7:T": [
+      0,
+      0,
+      81,
+      -100
+    ],
+    "order.6:T": [
+      0,
+      0,
+      81,
+      -100
+    ],
+    "order.7:F": [
+      0,
+      0,
+      81,
+      0
+    ],
+    "order.3:T": [
+      0,
+      37,
+      -100,
+      -100
+    ],
+    "order.4:F": [
+      0,
+      37,
+      -100,
+      -100
+    ],
+    "order.4:T": [
+      0,
+      37,
+      48,
+      -100
+    ],
+    "order.5:F": [
+      0,
+      37,
+      48,
+      -100
+    ],
+    "order.5:T": [
+      0,
+      37,
+      48,
+      41
+    ],
+    "shipping.7:F": [
+      1,
+      -100,
+      -100,
+      -100
+    ],
+    "shipping.1:F": [
+      1,
+      -100,
+      -100,
+      -100
+    ],
+    "shipping.4:F": [
+      1,
+      -100,
+      -100,
+      -100
+    ],
+    "shipping.7:T": [
+      1,
+      -100,
+      -41,
+      -100
+    ],
+    "shipping.4:T": [
+      1,
+      -61,
+      -100,
+      -100
+    ],
+    "shipping.5:F": [
+      1,
+      -61,
+      -100,
+      -100
+    ],
+    "shipping.6:F": [
+      1,
+      -61,
+      23,
+      -100
+    ],
+    "shipping.5:T": [
+      1,
+      -61,
+      23,
+      -100
+    ],
+    "shipping.6:T": [
+      1,
+      -61,
+      23,
+      7
+    ],
+    "shipping.1:T": [
+      1,
+      61,
+      -100,
+      -100
+    ],
+    "shipping.3:F": [
+      1,
+      61,
+      -100,
+      -100
+    ],
+    "shipping.2:T": [
+      1,
+      61,
+      -100,
+      -100
+    ],
+    "shipping.3:T": [
+      1,
+      61,
+      -61,
+      61
+    ],
+    "shipping.2:F": [
+      1,
+      61,
+      -40,
+      -100
+    ],
+    "admission.5:F": [
+      2,
+      -100,
+      -100,
+      -100
+    ],
+    "admission.1:F": [
+      2,
+      -100,
+      -100,
+      -100
+    ],
+    "admission.4:T": [
+      2,
+      -100,
+      -100,
+      -100
+    ],
+    "admission.5:T": [
+      2,
+      -100,
+      -100,
+      100
+    ],
+    "admission.4:F": [
+      2,
+      -60,
+      -100,
+      -100
+    ],
+    "admission.6:F": [
+      2,
+      -60,
+      -100,
+      -100
+    ],
+    "admission.2:F": [
+      2,
+      -1,
+      -100,
+      -100
+    ],
+    "admission.1:T": [
+      2,
+      -1,
+      -100,
+      -100
+    ],
+    "admission.3:F": [
+      2,
+      -1,
+      11,
+      -100
+    ],
+    "admission.2:T": [
+      2,
+      -1,
+      11,
+      -100
+    ],
+    "admission.3:T": [
+      2,
+      0,
+      11,
+      11
+    ],
+    "admission.6:T": [
+      2,
+      40,
+      -100,
+      -100
+    ],
+    "admission.7:F": [
+      2,
+      40,
+      -100,
+      -100
+    ],
+    "admission.7:T": [
+      2,
+      40,
+      37,
+      -100
+    ],
+    "admission.8:F": [
+      2,
+      40,
+      37,
+      -100
+    ],
+    "admission.8:T": [
+      2,
+      40,
+      37,
+      -11
+    ]
+  },
+  "calibration_evaluations": 46875
+}

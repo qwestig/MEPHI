@@ -1,0 +1,82 @@
+{
+  "run": 17,
+  "seed": 20261119,
+  "solutions": [
+    {
+      "name": "Дешёвая",
+      "genome": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "components": {
+        "cpu": "CPU-1",
+        "gpu": "GPU-1",
+        "ram": "8 GB",
+        "storage": "HDD-1TB",
+        "memory_generation": "DDR4"
+      },
+      "cost": 531.0,
+      "power": 157.5,
+      "performance": 62.7
+    },
+    {
+      "name": "Экономичная по энергии",
+      "genome": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "components": {
+        "cpu": "CPU-2",
+        "gpu": "GPU-1",
+        "ram": "8 GB",
+        "storage": "SATA-500GB",
+        "memory_generation": "DDR4"
+      },
+      "cost": 631.0,
+      "power": 102.5,
+      "performance": 62.6
+    },
+    {
+      "name": "Высокопроизводительная",
+      "genome": [
+        6,
+        7,
+        3,
+        4
+      ],
+      "components": {
+        "cpu": "CPU-7",
+        "gpu": "GPU-8",
+        "ram": "32 GB",
+        "storage": "NVMe-2TB",
+        "memory_generation": "DDR5"
+      },
+      "cost": 2285.0,
+      "power": 482.0,
+      "performance": 231.16
+    },
+    {
+      "name": "Сбалансированная",
+      "genome": [
+        3,
+        5,
+        3,
+        1
+      ],
+      "components": {
+        "cpu": "CPU-4",
+        "gpu": "GPU-6",
+        "ram": "32 GB",
+        "storage": "SATA-500GB",
+        "memory_generation": "DDR4"
+      },
+      "cost": 1268.0,
+      "power": 199.0,
+      "performance": 143.79999999999998
+    }
+  ]
+}

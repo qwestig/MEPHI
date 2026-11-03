@@ -1,0 +1,13 @@
+{
+  "variant": 13,
+  "runs": 30,
+  "base_seed": 20261103,
+  "evaluation_budget": 6000,
+  "population_size": 60,
+  "crossover_probability": 0.9,
+  "mutation_probability": 0.4,
+  "lower_bound": -100,
+  "upper_bound": 100,
+  "restart_interval": 300,
+  "calibration_grid": [-100, -80, -61, -60, -41, -40, -17, -11, -1, 0, 1, 7, 11, 23, 36, 37, 40, 41, 48, 60, 61, 80, 81, 99, 100]
+}

@@ -1,0 +1,44 @@
+{
+  "variant": 13,
+  "track": "A",
+  "runs": 20,
+  "base_seed": 20261103,
+  "evaluation_budget": 4000,
+  "population_size": 80,
+  "weighted_population": 80,
+  "crossover_probability": 0.9,
+  "mutation_probability": 0.25,
+  "weights": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      2
+    ]
+  ],
+  "catalogue_seed": 132603,
+  "hypervolume_reference": [
+    1.05,
+    1.05,
+    1.05
+  ]
+}
