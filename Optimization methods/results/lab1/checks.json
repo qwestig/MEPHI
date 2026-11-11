@@ -1,0 +1,35 @@
+{
+  "base": {
+    "passed": true,
+    "tolerance": 1e-07,
+    "violations": {
+      "nonnegative": 0.0,
+      "demand": 0.0,
+      "resources": 0.0
+    },
+    "objective_recomputed": 17.29100689655172,
+    "objective_error": 3.552713678800501e-15
+  },
+  "deficit": {
+    "passed": true,
+    "tolerance": 1e-07,
+    "violations": {
+      "nonnegative": 0.0,
+      "demand": 0.0,
+      "resources": 1.4210854715202004e-14
+    },
+    "objective_recomputed": 15.341591137254904,
+    "objective_error": 0.0
+  },
+  "stress": {
+    "passed": true,
+    "tolerance": 1e-07,
+    "violations": {
+      "nonnegative": 0.0,
+      "demand": 0.0,
+      "resources": 0.0
+    },
+    "objective_recomputed": 12.559975279999998,
+    "objective_error": 0.0
+  }
+}

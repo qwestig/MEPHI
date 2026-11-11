@@ -1,0 +1,270 @@
+{
+  "solutions": {
+    "base": {
+      "status": "Optimal",
+      "seconds": 0.0005372079976950772,
+      "variables": 6,
+      "constraints": 9,
+      "simplex_iterations": 1,
+      "ipm_iterations": 0,
+      "nodes": 0,
+      "objective": -17.291006896551725,
+      "x": [
+        41.0,
+        35.0,
+        40.0,
+        10.482758620689651,
+        0.0,
+        0.0
+      ],
+      "row_dual": [
+        -0.0,
+        -0.2043103448275862,
+        -0.0,
+        -0.014429310344827577,
+        -0.06747586206896551,
+        -0.06714827586206897,
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "col_dual": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.03184999999999999,
+        0.009253448275862067
+      ],
+      "mip_gap": null,
+      "dual_bound": null
+    },
+    "deficit": {
+      "status": "Optimal",
+      "seconds": 0.00022024999998393469,
+      "variables": 6,
+      "constraints": 9,
+      "simplex_iterations": 3,
+      "ipm_iterations": 0,
+      "nodes": 0,
+      "objective": -15.341591137254904,
+      "x": [
+        0.0,
+        35.0,
+        36.1446274509804,
+        0.0,
+        34.50337254901961,
+        0.0
+      ],
+      "row_dual": [
+        -0.13702941176470587,
+        -0.010196078431372569,
+        -0.0,
+        -0.0,
+        -0.008092156862745087,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "col_dual": [
+        0.01583725490196078,
+        0.0,
+        0.0,
+        0.024443137254901964,
+        0.0,
+        0.06281372549019607
+      ],
+      "mip_gap": null,
+      "dual_bound": null
+    },
+    "stress": {
+      "status": "Optimal",
+      "seconds": 0.0002522920003684703,
+      "variables": 6,
+      "constraints": 9,
+      "simplex_iterations": 1,
+      "ipm_iterations": 0,
+      "nodes": 0,
+      "objective": -12.559975279999998,
+      "x": [
+        41.0,
+        0.0,
+        40.0,
+        0.0,
+        11.879199999999992,
+        0.0
+      ],
+      "row_dual": [
+        -0.0,
+        -0.0,
+        -0.01459,
+        -0.02466999999999999,
+        -0.0,
+        -0.053159999999999985,
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "col_dual": [
+        0.0,
+        0.025880000000000014,
+        0.0,
+        0.012810000000000016,
+        0.0,
+        0.09648000000000001
+      ],
+      "mip_gap": null,
+      "dual_bound": null
+    }
+  },
+  "dual": {
+    "status": "Optimal",
+    "seconds": 0.00015179099864326417,
+    "variables": 9,
+    "constraints": 6,
+    "simplex_iterations": 6,
+    "ipm_iterations": 0,
+    "nodes": 0,
+    "objective": 17.291006896551725,
+    "x": [
+      0.0,
+      0.2043103448275862,
+      0.0,
+      0.014429310344827587,
+      0.06747586206896551,
+      0.06714827586206897,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "row_dual": [
+      41.0,
+      35.0,
+      40.00000000000001,
+      10.482758620689651,
+      -0.0,
+      -0.0
+    ],
+    "col_dual": [
+      5.577241379310351,
+      0.0,
+      34.97517241379296,
+      0.0,
+      0.0,
+      0.0,
+      24.51724137931035,
+      42.0,
+      20.0
+    ],
+    "mip_gap": null,
+    "dual_bound": null
+  },
+  "certificate": {
+    "primal_profit": 17.291006896551725,
+    "dual_cost": 17.291006896551725,
+    "gap": 0.0,
+    "dual_nonnegative_violation": 0.0,
+    "dual_constraint_violation": 1.3877787807814457e-17,
+    "primal_complementarity": 0.0,
+    "dual_complementarity": 1.4547749977846873e-16,
+    "passed": true
+  },
+  "constraints": [
+    {
+      "constraint": "funding",
+      "usage": 126.48275862068965,
+      "limit": 132.06,
+      "slack": 5.577241379310351,
+      "shadow_price": 0.0
+    },
+    {
+      "constraint": "risk_limit",
+      "usage": 57.03,
+      "limit": 57.03,
+      "slack": 0.0,
+      "shadow_price": 0.2043103448275862
+    },
+    {
+      "constraint": "staff_hours",
+      "usage": 1041.344827586207,
+      "limit": 1076.32,
+      "slack": 34.97517241379296,
+      "shadow_price": 0.0
+    },
+    {
+      "constraint": "demand_B1",
+      "usage": 41.0,
+      "limit": 41.0,
+      "slack": 0.0,
+      "shadow_price": 0.014429310344827577
+    },
+    {
+      "constraint": "demand_B2",
+      "usage": 35.0,
+      "limit": 35.0,
+      "slack": 0.0,
+      "shadow_price": 0.06747586206896551
+    },
+    {
+      "constraint": "demand_B3",
+      "usage": 40.0,
+      "limit": 40.0,
+      "slack": 0.0,
+      "shadow_price": 0.06714827586206897
+    },
+    {
+      "constraint": "demand_B4",
+      "usage": 10.482758620689651,
+      "limit": 35.0,
+      "slack": 24.51724137931035,
+      "shadow_price": 0.0
+    },
+    {
+      "constraint": "demand_B5",
+      "usage": 0.0,
+      "limit": 42.0,
+      "slack": 42.0,
+      "shadow_price": 0.0
+    },
+    {
+      "constraint": "demand_B6",
+      "usage": 0.0,
+      "limit": 20.0,
+      "slack": 20.0,
+      "shadow_price": 0.0
+    }
+  ],
+  "predictions": [
+    {
+      "scenario": "deficit",
+      "predicted_change": 0.0,
+      "actual_change": -1.949415759296821,
+      "error": -1.949415759296821
+    },
+    {
+      "scenario": "stress",
+      "predicted_change": 0.0,
+      "actual_change": -4.731031616551727,
+      "error": -4.731031616551727
+    },
+    {
+      "scenario": "small_increase_funding",
+      "predicted_change": 0.0,
+      "actual_change": 0.0,
+      "error": 0.0
+    },
+    {
+      "scenario": "small_increase_risk_limit",
+      "predicted_change": 0.0002043103448275862,
+      "actual_change": 0.00020431034482726318,
+      "error": -3.230109322377439e-16
+    },
+    {
+      "scenario": "small_increase_staff_hours",
+      "predicted_change": 0.0,
+      "actual_change": 0.0,
+      "error": 0.0
+    }
+  ]
+}

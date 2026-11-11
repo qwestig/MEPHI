@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "tolerance": 1e-07,
+  "violations": {
+    "q_nonnegative": 2.1602719613156296e-11,
+    "z_nonnegative": 0.0,
+    "z_upper": 2.3581137043038325e-13,
+    "demand": 5.8548721426632255e-12,
+    "one_tier": 2.3581137043038325e-13,
+    "capacity": 0.0,
+    "tier_lower": 8.114398042380344e-12,
+    "tier_upper": 2.6919701979959635e-12,
+    "product_links": 7.773337529215496e-12,
+    "integrality": 2.3581137043038325e-13
+  },
+  "objective_recomputed": 2237.6219999999594,
+  "objective_error": 0.0
+}

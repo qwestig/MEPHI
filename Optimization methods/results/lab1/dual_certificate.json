@@ -1,0 +1,10 @@
+{
+  "primal_profit": 17.291006896551725,
+  "dual_cost": 17.291006896551725,
+  "gap": 0.0,
+  "dual_nonnegative_violation": 0.0,
+  "dual_constraint_violation": 1.3877787807814457e-17,
+  "primal_complementarity": 0.0,
+  "dual_complementarity": 1.4547749977846873e-16,
+  "passed": true
+}

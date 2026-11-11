@@ -1,0 +1,50 @@
+{
+  "base": {
+    "passed": true,
+    "tolerance": 1e-07,
+    "violations": {
+      "flow_nonnegative": 0.0,
+      "wh_nonnegative": 0.0,
+      "store_nonnegative": 0.0,
+      "route_capacity": 0.0,
+      "warehouse_storage": 0.0,
+      "store_storage": 0.0,
+      "warehouse_balance": 0.0,
+      "store_balance": 0.0
+    },
+    "objective_recomputed": 2180.23,
+    "objective_error": 4.547473508864641e-13
+  },
+  "overload": {
+    "passed": true,
+    "tolerance": 1e-07,
+    "violations": {
+      "flow_nonnegative": 0.0,
+      "wh_nonnegative": 0.0,
+      "store_nonnegative": 0.0,
+      "route_capacity": 0.0,
+      "warehouse_storage": 0.0,
+      "store_storage": 0.0,
+      "warehouse_balance": 0.0,
+      "store_balance": 0.0
+    },
+    "objective_recomputed": 2196.725,
+    "objective_error": 4.547473508864641e-13
+  },
+  "failure": {
+    "passed": true,
+    "tolerance": 1e-07,
+    "violations": {
+      "flow_nonnegative": 0.0,
+      "wh_nonnegative": 0.0,
+      "store_nonnegative": 0.0,
+      "route_capacity": 0.0,
+      "warehouse_storage": 0.0,
+      "store_storage": 0.0,
+      "warehouse_balance": 0.0,
+      "store_balance": 0.0
+    },
+    "objective_recomputed": 2225.7499999999995,
+    "objective_error": 0.0
+  }
+}

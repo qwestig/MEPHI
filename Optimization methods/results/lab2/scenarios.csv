@@ -1,0 +1,6 @@
+﻿scenario,status,cost,demand,available
+base,Optimal,2180.2300000000005,517.0,577.0
+overload,Optimal,2196.7250000000004,517.0,577.0
+failure,Optimal,2225.7499999999995,517.0,577.0
+growth,Infeasible,,620.4,577.0
+stress,Infeasible,,620.4,577.0

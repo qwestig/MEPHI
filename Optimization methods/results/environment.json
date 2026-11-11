@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "processor": "arm",
+  "numpy": "2.3.5",
+  "highs": "1.15.1",
+  "matplotlib": "3.11.2",
+  "seed": 10107,
+  "threads": 1,
+  "lp_algorithm": "dual/revised simplex (HiGHS simplex)",
+  "presolve": "on",
+  "mip_rel_gap": 0.0,
+  "time_limit_seconds": 30.0
+}

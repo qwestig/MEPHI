@@ -1,0 +1,6 @@
+﻿scenario,predicted_change,actual_change,error
+deficit,0.0,-1.949415759296821,-1.949415759296821
+stress,0.0,-4.731031616551727,-4.731031616551727
+small_increase_funding,0.0,0.0,0.0
+small_increase_risk_limit,0.0002043103448275862,0.00020431034482726318,-3.230109322377439e-16
+small_increase_staff_hours,0.0,0.0,0.0

@@ -1,0 +1,96 @@
+{
+  "growth": {
+    "total_supply_cut_shortfall": 43.39999999999998,
+    "minimum_unmet": 43.39999999999999,
+    "unmet": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        17.0
+      ],
+      [
+        0.0,
+        26.39999999999999,
+        0.0,
+        0.0
+      ]
+    ],
+    "repaired_check": {
+      "passed": true,
+      "tolerance": 1e-07,
+      "violations": {
+        "flow_nonnegative": 0.0,
+        "wh_nonnegative": 0.0,
+        "store_nonnegative": 0.0,
+        "route_capacity": 0.0,
+        "warehouse_storage": 0.0,
+        "store_storage": 0.0,
+        "warehouse_balance": 0.0,
+        "store_balance": 7.105427357601002e-15
+      },
+      "objective_recomputed": 2860.604,
+      "objective_error": 0.0
+    },
+    "interpretation": "Минимальное снижение спроса при фиксированных поставках, запасах и ёмкостях; не IIS."
+  },
+  "stress": {
+    "total_supply_cut_shortfall": 43.39999999999998,
+    "minimum_unmet": 43.399999999999984,
+    "unmet": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        17.0
+      ],
+      [
+        0.0,
+        11.199999999999989,
+        15.199999999999996,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "repaired_check": {
+      "passed": true,
+      "tolerance": 1e-07,
+      "violations": {
+        "flow_nonnegative": 0.0,
+        "wh_nonnegative": 0.0,
+        "store_nonnegative": 0.0,
+        "route_capacity": 0.0,
+        "warehouse_storage": 0.0,
+        "store_storage": 0.0,
+        "warehouse_balance": 7.105427357601002e-15,
+        "store_balance": 7.105427357601002e-15
+      },
+      "objective_recomputed": 3093.468,
+      "objective_error": 0.0
+    },
+    "interpretation": "Минимальное снижение спроса при фиксированных поставках, запасах и ёмкостях; не IIS."
+  }
+}

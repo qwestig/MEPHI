@@ -1,0 +1,4 @@
+﻿scenario,status,cost,suppliers,tiers,mip_gap,seconds
+base,Optimal,653.4425,S2; S4,S2:T3; S4:T3,0.0,0.005425457999081118
+deficit,Optimal,666.9132999999999,S2; S4,S2:T3; S4:T3,0.0,0.009528582999337232
+stress,Optimal,783.3189199999999,S2; S3; S5,S2:T3; S3:T3; S5:T2,0.0,0.006498332997580292
