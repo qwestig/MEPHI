@@ -6,3 +6,4 @@
 - [Functional programming](Func_prog)
 - [ML Practicum](ML%20Practicum/)
 - [Evolutionary programming](Evolutionary%20programming/)
+- [Дискретная математика: неклассические логики](Discrete%20mathematics%20and%20non-classical%20logics/)

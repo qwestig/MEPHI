@@ -1,0 +1,604 @@
+{
+  "encoding": "Internal truth values: 0=false, 1=half, 2=true; CSV and report use 0, 1/2, 1",
+  "variants": {
+    "1": {
+      "formulas": [
+        {
+          "id": "F1",
+          "formula": "((p → q) ∨ (q → p))",
+          "systems": {
+            "CL": {
+              "variables": [
+                "p",
+                "q"
+              ],
+              "interpretations": 4,
+              "valid": true,
+              "satisfiable": true,
+              "identically_false": false,
+              "counterexample": null,
+              "witness": {
+                "p": 0,
+                "q": 0
+              },
+              "counts": {
+                "0": 0,
+                "1": 4
+              }
+            },
+            "K3": {
+              "variables": [
+                "p",
+                "q"
+              ],
+              "interpretations": 9,
+              "valid": false,
+              "satisfiable": true,
+              "identically_false": false,
+              "counterexample": {
+                "p": 1,
+                "q": 1
+              },
+              "witness": {
+                "p": 0,
+                "q": 0
+              },
+              "counts": {
+                "0": 0,
+                "1/2": 1,
+                "1": 8
+              }
+            },
+            "L3": {
+              "variables": [
+                "p",
+                "q"
+              ],
+              "interpretations": 9,
+              "valid": true,
+              "satisfiable": true,
+              "identically_false": false,
+              "counterexample": null,
+              "witness": {
+                "p": 0,
+                "q": 0
+              },
+              "counts": {
+                "0": 0,
+                "1/2": 0,
+                "1": 9
+              }
+            }
+          }
+        },
+        {
+          "id": "F2",
+          "formula": "(((p → q) → p) → p)",
+          "systems": {
+            "CL": {
+              "variables": [
+                "p",
+                "q"
+              ],
+              "interpretations": 4,
+              "valid": true,
+              "satisfiable": true,
+              "identically_false": false,
+              "counterexample": null,
+              "witness": {
+                "p": 0,
+                "q": 0
+              },
+              "counts": {
+                "0": 0,
+                "1": 4
+              }
+            },
+            "K3": {
+              "variables": [
+                "p",
+                "q"
+              ],
+              "interpretations": 9,
+              "valid": false,
+              "satisfiable": true,
+              "identically_false": false,
+              "counterexample": {
+                "p": 1,
+                "q": 0
+              },
+              "witness": {
+                "p": 0,
+                "q": 0
+              },
+              "counts": {
+                "0": 0,
+                "1/2": 3,
+                "1": 6
+              }
+            },
+            "L3": {
+              "variables": [
+                "p",
+                "q"
+              ],
+              "interpretations": 9,
+              "valid": false,
+              "satisfiable": true,
+              "identically_false": false,
+              "counterexample": {
+                "p": 1,
+                "q": 0
+              },
+              "witness": {
+                "p": 0,
+                "q": 0
+              },
+              "counts": {
+                "0": 0,
+                "1/2": 1,
+                "1": 8
+              }
+            }
+          }
+        },
+        {
+          "id": "F3",
+          "formula": "((p ∧ ¬p) ∨ q)",
+          "systems": {
+            "CL": {
+              "variables": [
+                "p",
+                "q"
+              ],
+              "interpretations": 4,
+              "valid": false,
+              "satisfiable": true,
+              "identically_false": false,
+              "counterexample": {
+                "p": 0,
+                "q": 0
+              },
+              "witness": {
+                "p": 0,
+                "q": 2
+              },
+              "counts": {
+                "0": 2,
+                "1": 2
+              }
+            },
+            "K3": {
+              "variables": [
+                "p",
+                "q"
+              ],
+              "interpretations": 9,
+              "valid": false,
+              "satisfiable": true,
+              "identically_false": false,
+              "counterexample": {
+                "p": 0,
+                "q": 0
+              },
+              "witness": {
+                "p": 0,
+                "q": 2
+              },
+              "counts": {
+                "0": 2,
+                "1/2": 4,
+                "1": 3
+              }
+            },
+            "L3": {
+              "variables": [
+                "p",
+                "q"
+              ],
+              "interpretations": 9,
+              "valid": false,
+              "satisfiable": true,
+              "identically_false": false,
+              "counterexample": {
+                "p": 0,
+                "q": 0
+              },
+              "witness": {
+                "p": 0,
+                "q": 2
+              },
+              "counts": {
+                "0": 2,
+                "1/2": 4,
+                "1": 3
+              }
+            }
+          }
+        },
+        {
+          "id": "F4",
+          "formula": "((p ∧ ¬p) ∧ q)",
+          "systems": {
+            "CL": {
+              "variables": [
+                "p",
+                "q"
+              ],
+              "interpretations": 4,
+              "valid": false,
+              "satisfiable": false,
+              "identically_false": true,
+              "counterexample": {
+                "p": 0,
+                "q": 0
+              },
+              "witness": null,
+              "counts": {
+                "0": 4,
+                "1": 0
+              }
+            },
+            "K3": {
+              "variables": [
+                "p",
+                "q"
+              ],
+              "interpretations": 9,
+              "valid": false,
+              "satisfiable": false,
+              "identically_false": false,
+              "counterexample": {
+                "p": 0,
+                "q": 0
+              },
+              "witness": null,
+              "counts": {
+                "0": 7,
+                "1/2": 2,
+                "1": 0
+              }
+            },
+            "L3": {
+              "variables": [
+                "p",
+                "q"
+              ],
+              "interpretations": 9,
+              "valid": false,
+              "satisfiable": false,
+              "identically_false": false,
+              "counterexample": {
+                "p": 0,
+                "q": 0
+              },
+              "witness": null,
+              "counts": {
+                "0": 7,
+                "1/2": 2,
+                "1": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "F5",
+          "formula": "(((p → q) ∧ (q → r)) → (p → r))",
+          "systems": {
+            "CL": {
+              "variables": [
+                "p",
+                "q",
+                "r"
+              ],
+              "interpretations": 8,
+              "valid": true,
+              "satisfiable": true,
+              "identically_false": false,
+              "counterexample": null,
+              "witness": {
+                "p": 0,
+                "q": 0,
+                "r": 0
+              },
+              "counts": {
+                "0": 0,
+                "1": 8
+              }
+            },
+            "K3": {
+              "variables": [
+                "p",
+                "q",
+                "r"
+              ],
+              "interpretations": 27,
+              "valid": false,
+              "satisfiable": true,
+              "identically_false": false,
+              "counterexample": {
+                "p": 1,
+                "q": 0,
+                "r": 0
+              },
+              "witness": {
+                "p": 0,
+                "q": 0,
+                "r": 0
+              },
+              "counts": {
+                "0": 0,
+                "1/2": 8,
+                "1": 19
+              }
+            },
+            "L3": {
+              "variables": [
+                "p",
+                "q",
+                "r"
+              ],
+              "interpretations": 27,
+              "valid": false,
+              "satisfiable": true,
+              "identically_false": false,
+              "counterexample": {
+                "p": 2,
+                "q": 1,
+                "r": 0
+              },
+              "witness": {
+                "p": 0,
+                "q": 0,
+                "r": 0
+              },
+              "counts": {
+                "0": 0,
+                "1/2": 1,
+                "1": 26
+              }
+            }
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "R1",
+          "premises": [
+            "(p ∨ q)",
+            "(p → r)",
+            "(q → r)",
+            "(r → s)",
+            "(s → t)"
+          ],
+          "conclusion": "t",
+          "systems": {
+            "CL": {
+              "entails": true,
+              "premises_satisfiable": true,
+              "premise_models": 3,
+              "interpretations": 32,
+              "counterexample": null
+            },
+            "K3": {
+              "entails": true,
+              "premises_satisfiable": true,
+              "premise_models": 5,
+              "interpretations": 243,
+              "counterexample": null
+            },
+            "L3": {
+              "entails": true,
+              "premises_satisfiable": true,
+              "premise_models": 5,
+              "interpretations": 243,
+              "counterexample": null
+            }
+          }
+        },
+        {
+          "id": "R2",
+          "premises": [
+            "(p → q)",
+            "(p → r)",
+            "((q ∧ r) → s)",
+            "(s → t)",
+            "(t → u)"
+          ],
+          "conclusion": "(¬p ∨ u)",
+          "systems": {
+            "CL": {
+              "entails": true,
+              "premises_satisfiable": true,
+              "premise_models": 14,
+              "interpretations": 64,
+              "counterexample": null
+            },
+            "K3": {
+              "entails": true,
+              "premises_satisfiable": true,
+              "premise_models": 41,
+              "interpretations": 729,
+              "counterexample": null
+            },
+            "L3": {
+              "entails": false,
+              "premises_satisfiable": true,
+              "premise_models": 77,
+              "interpretations": 729,
+              "counterexample": {
+                "assignment": {
+                  "p": 1,
+                  "q": 1,
+                  "r": 1,
+                  "s": 1,
+                  "t": 1,
+                  "u": 1
+                },
+                "premises": [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ],
+                "conclusion": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "R3",
+          "premises": [
+            "(p ∨ q)",
+            "(p → r)",
+            "(q → s)",
+            "(r → t)",
+            "(s → t)"
+          ],
+          "conclusion": "(t ∧ (p ∨ ¬p))",
+          "systems": {
+            "CL": {
+              "entails": true,
+              "premises_satisfiable": true,
+              "premise_models": 5,
+              "interpretations": 32,
+              "counterexample": null
+            },
+            "K3": {
+              "entails": false,
+              "premises_satisfiable": true,
+              "premise_models": 9,
+              "interpretations": 243,
+              "counterexample": {
+                "assignment": {
+                  "p": 1,
+                  "q": 2,
+                  "r": 2,
+                  "s": 2,
+                  "t": 2
+                },
+                "premises": [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ],
+                "conclusion": 1
+              }
+            },
+            "L3": {
+              "entails": false,
+              "premises_satisfiable": true,
+              "premise_models": 11,
+              "interpretations": 243,
+              "counterexample": {
+                "assignment": {
+                  "p": 1,
+                  "q": 2,
+                  "r": 1,
+                  "s": 2,
+                  "t": 2
+                },
+                "premises": [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ],
+                "conclusion": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "R4",
+          "premises": [
+            "(p ∨ q)",
+            "(p → r)",
+            "(q → s)",
+            "((r ∨ s) → t)",
+            "(s → u)"
+          ],
+          "conclusion": "(t → u)",
+          "systems": {
+            "CL": {
+              "entails": false,
+              "premises_satisfiable": true,
+              "premise_models": 6,
+              "interpretations": 64,
+              "counterexample": {
+                "assignment": {
+                  "p": 2,
+                  "q": 0,
+                  "r": 2,
+                  "s": 0,
+                  "t": 2,
+                  "u": 0
+                },
+                "premises": [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ],
+                "conclusion": 0
+              }
+            },
+            "K3": {
+              "entails": false,
+              "premises_satisfiable": true,
+              "premise_models": 11,
+              "interpretations": 729,
+              "counterexample": {
+                "assignment": {
+                  "p": 2,
+                  "q": 0,
+                  "r": 2,
+                  "s": 0,
+                  "t": 2,
+                  "u": 0
+                },
+                "premises": [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ],
+                "conclusion": 0
+              }
+            },
+            "L3": {
+              "entails": false,
+              "premises_satisfiable": true,
+              "premise_models": 15,
+              "interpretations": 729,
+              "counterexample": {
+                "assignment": {
+                  "p": 2,
+                  "q": 0,
+                  "r": 2,
+                  "s": 0,
+                  "t": 2,
+                  "u": 0
+                },
+                "premises": [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ],
+                "conclusion": 0
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
